@@ -3,6 +3,7 @@ services:
   database:
     image: postgres:12
     environment:
+      - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=hejmdal
       - POSTGRES_HOST_AUTH_METHOD=trust
   web:
